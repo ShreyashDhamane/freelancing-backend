@@ -29,7 +29,8 @@ var storage = multer.diskStorage({
 });
 var upload = multer({ storage: storage });
 const cors = require("cors");
-app.use(cors(corsOptions));
+
+app.use(cors());
 // const corsOptions = {
 //   origin: "*",
 //   credentials: true, //access-control-allow-credentials:true
